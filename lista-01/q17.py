@@ -2,8 +2,8 @@ pessoas = int(input("Quantidade de pessoas: "))
 bolos = pessoas / 4
 farinha = 2 * bolos
 acucar = 1.5 * bolos
-ovos = bolos * 3
+ovos = 3 * bolos
 
-print("Ovos: ", ovos, "unidades")
-print("Farinha: ", farinha, "xícaras")
-print("Açúcar: ", acucar, "xícaras")
+print(f"Ovos: {ovos} unidades")
+print(f"Farinha: {farinha} xícaras")
+print(f"Açúcar: {acucar} xícaras")
