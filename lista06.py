@@ -92,6 +92,22 @@ def main():
         else:
             print(f"Cor: RGB({red}, {green}, {blue})")
 
+    def clubes():
+        grupo1 = set(map(str, input("Grupo 1: ").split()))
+        grupo2 = set(map(str, input("Grupo 2: ").split()))
+
+        participam_dois = grupo1 & grupo2
+        participam_pelo_menos_um = grupo1 | grupo2
+        exclusivos_robotica = grupo1 - grupo2
+        exclusivos_programação = grupo2 - grupo1
+        somente_um = grupo1 ^ grupo2
+
+        print("Alunos que participam dos dois clubes: ", *participam_dois)
+        print("Alunos que participam de pelo menos um dos clubes: ", *participam_pelo_menos_um)
+        print("Alunos que participam só de robótica: ", *exclusivos_robotica)
+        print("Alunos que participam só de programação: ", *exclusivos_programação)
+        print("Alunos que participam somente de um clube: ", *somente_um)
+
     locals()[codigo]()
 
 if __name__ == "__main__":
